@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT commands and usage</title>
+</head>
+<body>
+    <div>
+        <h1>Name: Kikelomo Esther Adebajo</h1>
+        <h2>Email: kikeadebajo@gmail.com</h2>
+        <ol>
+            <b>GIT Commands and Usage</b>
+            <li>git config -l : returns a list of information about your git configuration including user name and email</li>
+             <li>git config --global user.name "Kikelove" : To configure your user name</li>
+             <li>git config --global user.email "kikeadebajo@gmail.com" : This command lets you setup the user email address you'll use in your commits </li>
+             <li>git config --global credential.helper cache : Use this command to store login credentials in the cache so you don't have to type them in each time.</li>
+             <li>git init : To initialize a new Git repo locally in your project root</li>
+             <li>git add filename_here : This command will add a file to the staging area. Just replace filename_here with the name of the file you want to add to the staging area.</li>
+             <li>git add .  - To add all files in your project to the staging area, you can use a wildcard . and every file will be added for you.</li>
+             <li>git add fil*  : With the asterisk in the command, you can add all files starting with 'fil' in the staging area.</li>
+             <li>git status : This command will show the status of the current repository including staged, unstaged, and untracked files.</li>
+             <li>git commit : To commit changes in the editor in Git</li>
+             <li>git commit -m "your commit message here" -  To commit changes with a message in Git</li>
+            <li>git commit -a -m"your commit message here"  : To add and commit tracked files with a single command by using the -a and -m options. </li>
+            <li>git log - This command shows the commit history for the current repository </li>
+            <li>git log -p  : This command shows the commit's history including all files and their changes</li>
+            <li>
+                git show commit-id  : This command shows a specific commit.
+               Replace commit-id with the id of the commit that you find in the commit log after the word commit.
+            </li>
+            <li>
+                git log --stat  : This command will cause the Git log to show some statistics about the changes in each commit, including line(s) changed and file names.
+            </li>
+            <li>
+                git add -p  : This command opens a prompt and asks if you want to stage changes or not, and includes other options.
+           </li>
+           <li>git rm filename : This command expects a commit message to explain why the file was deleted</li>
+           <li>git mv oldfile newfile : This command stages the changes, then it expects a commit message</li>
+           <li>Create a .gitignore file and commit it - To ignore files in Git</li>
+           <li>git checkout filename : To revert unstaged changes in Git:</li>
+           <li>git commit --amend : It allows you to modify and add changes to the most recent commit. </li>
+           <li>git push -f  :  This command will force a push request. This is usually fine for pull request branches because nobody else should have cloned them</li>
+           <li>git rebase branch_name_here : You can transfer completed work from one branch to another using git rebase.</li>
+           <li>git push --delete origin branch_name_here  :  To remove a remote branch in Git</li>
+           <li>git push -u origin branch_name : To push a new branch to a remote repo in Git </li>
+           <li>
+            git remote update :  This lets you update the remote without merging any content into the
+            local branches
+        </li>
+        <li>git revert HEAD : To rollback the last commit in Git</li>
+        <li>git revert comit_id_here : To rollback an old commit in Git</li>
+        <li>git branch branch_name : To create a new branch in Git</li>
+        <li>git checkout branch_name : To switch to a newly created branch in Git </li>    
+    </ol>
+    </div>
+</body>
+</html>
